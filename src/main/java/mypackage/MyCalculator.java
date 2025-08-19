@@ -20,13 +20,17 @@ public class MyCalculator {
 		return a/b;
 	}
 	
+	public int mod(int a, int b) 
+	{
+		return a%b;
+	}
+	
 	public static void main(String[] args) {
 		MyCalculator calc = new MyCalculator();
 		System.out.println("sum is "+ calc.sum(10,20));
 		System.out.println("diff is "+ calc.diff(10,20));
 		System.out.println("mult is "+ calc.mult(10,20));
 		System.out.println("div is "+ calc.div(10,20));
-
-
+		System.out.println("mod is "+ calc.mod(10,20));
 	}
 }
